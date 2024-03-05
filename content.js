@@ -1,6 +1,6 @@
 // Inject CSS for chat UI
 const link = document.createElement('link');
-link.href = chrome.runtime.getURL('chat.css'); // Correctly pointing to 'chat.css' in your extension directory
+link.href = chrome.runtime.getURL('chat.css'); // pointing to 'chat.css' in extension directory
 link.type = 'text/css';
 link.rel = 'stylesheet';
 document.head.appendChild(link);
