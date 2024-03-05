@@ -39,3 +39,15 @@
 #send-btn:hover {
     opacity: 0.8;
 }
+
+.user-message, .response-message {
+    margin-bottom: 10px; /* Adds space between messages */
+}
+
+.user-message {
+    color: blue;
+}
+
+.response-message {
+    color: rgb(0, 25, 0);
+}

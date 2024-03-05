@@ -30,11 +30,13 @@ function sendMessage() {
         // Display the user's message in the chat window
         const userMessage = document.createElement('div');
         userMessage.textContent = `You: ${userText}`;
+        userMessage.className = 'user-message';
         chatWindow.appendChild(userMessage);
 
         // Here, you can add the functionality to process the message and generate a response
         const responseMessage = document.createElement('div');
         responseMessage.textContent = `Co-Pilot: Echoing back "${userText}"`;
+        responseMessage.className = 'response-message'; // Add class
         chatWindow.appendChild(responseMessage);
 
         // Clear the input field
